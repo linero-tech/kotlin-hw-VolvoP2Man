@@ -36,22 +36,22 @@ Println C
 GoTo 56
 *//Kelvin to Celsius//
 INPUT K
-CALCULATE C by K-272.15
+CALCULATE C by K-273.15
 Println K
 GoTo 56
 *//Celsius to Kelvin//
 INPUT C
-CALCULATE K by C+272.15
+CALCULATE K by C+273.15
 Println K
 GoTo 56
 *//Kelvin to Fahrenheit// 
 INPUT K
-CALCULATE F by (K-272.15)*1.8 + 32
+CALCULATE F by (K-273.15)*1.8 + 32
 Println F
 GoTo 56
 *//Fahrenheit to Kelvin//
 INPUT F
-CALCULATE K by (F-32)*05556 + 272.15 
+CALCULATE K by (F-32)*0.5556 + 273.15 
 Println K
 """
 }
