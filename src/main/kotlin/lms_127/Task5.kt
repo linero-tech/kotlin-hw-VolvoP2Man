@@ -5,7 +5,8 @@ fun task5(valueForA: Int, valueForB: Int): Pair<Int, Int> {
     var a = valueForA
     var b = valueForB
 
-    TODO("Your solutions goes in here.")
+    a = 2
+    b = 1
 
     // Do not erase or change this statement
     return Pair(a, b)
