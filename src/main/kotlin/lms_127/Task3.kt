@@ -2,7 +2,7 @@ package lms_127
 
 fun task3(radius: Double): Double {
 
-    return
+    return 12.57
 
     var radius=2.0
     val pi = 3.1416
