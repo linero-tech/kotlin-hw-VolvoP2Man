@@ -19,7 +19,7 @@ IF G = 5 than Println(“Bar”)
 V/3=V
 IF V = 1 than SKIP TO LINE 21
 IF V < 1 than SKIP TO LINE 12
-SKIP LINE TO 17
+SKIP LINE TO 19
 G/2=G
 IF G = 1 than SKIP TO LINE
 IF G<1 SKIP TO LINE 25
