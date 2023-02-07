@@ -2,14 +2,15 @@ package lms_126
 
 fun task5(): String {
 
-    return """VAL X
-        |IF X=1 println("Monday")
-        |IF X=2 println("Tuesday")
-        |IF X=3 println("Wednesday")
-        |IF X=4 println("Thursday")
-        |IF X=5 println("Friday")
-        | IF X=6 println("Saturday")
-        | IF X=7 println("Sunday")
-        | IF X=8 println("Sunday, not a sunday")
+    return """Input VAL X
+        |if X=1 println("Monday")
+        |else if X=2 println("Tuesday")
+        |else if X=3 println("Wednesday")
+        |else if X=4 println("Thursday")
+        |else if X=5 println("Friday")
+         else if  X=6 println("Saturday")
+        |else if X=7 println("Sunday")
+         else println("Sunday, not a sunday, ERROR!")
+     
     """.trimMargin()
 }
