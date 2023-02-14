@@ -12,4 +12,5 @@ fun main () {
     val sentence = "I code in KOTLIN"
     val result = sentence.count{it == 'I'}
     println ("the letter I occurs $result times in the sentence I code in Kotlin")
+    
 }
