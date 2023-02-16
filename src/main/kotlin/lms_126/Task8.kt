@@ -2,7 +2,24 @@ package lms_126
 
 fun task8(): String {
 
-    return
+    return """ val x = ""
+        Input X
+        If X %15 == 0 
+        println("FooBar")
+        else if X %3 == =
+        println("Foo")
+        else if X %5 == 0
+        println("Bar")
+        else if X %3 != 0 || X %5 != 0 || X %15 != 0
+        println("Qix")
+        else 
+        print("Error")
+      
+       
+        
+    
+       
+    """.trimMargin()
     /* (Original Messy solution)
 VAR X
 INPUT X
@@ -30,22 +47,5 @@ IF G = 1 Than Println(“Bar”)
 Println("Qix") */
 
 
-    """ val x = ""
-        Input X
-        If X %15 == 0 
-        println("FooBar")
-        else if X %3 == =
-        println("Foo")
-        else if X %5 == 0
-        println("Bar")
-        else if X %3 != 0 || X %5 != 0 || X %15 != 0
-        println("Qix")
-        else 
-        print("Error")
-      
-       
-        
-    
-       
-    """.trimMargin()
+
 }
