@@ -2,7 +2,16 @@ package lms_126
 
 fun task6(): String {
 
-    return """VAL X = 5
+    return   """val x = 5
+       var times = 1
+       
+       for (times 1..20) 
+       print X * times 
+       times + 1
+       
+    """
+
+    /*VAL X = 5
 Println X*1
 println X*2
 println X*3
@@ -23,5 +32,6 @@ println X*17
 println X*18
 println X*19
 println X*20
-"""
+*/
+  .trimMargin()
 }
