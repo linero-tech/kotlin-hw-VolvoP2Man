@@ -2,15 +2,9 @@ package lms_127
 
 fun task4(base: Double, height: Double): Double {
 
-    val base = 5.0
-    val height = 10.0
-    var result = base * height / 2
-    println("$result")
+    val result = height * base
     return result
 }
 fun main () {
-    val base = 5.0
-    val height = 10.0
-    var result = base * height / 2
-    println("$result")
+  task4(base = 2.0, height = 2.0)
 }
