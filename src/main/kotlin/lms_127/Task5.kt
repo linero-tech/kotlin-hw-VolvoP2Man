@@ -11,3 +11,7 @@ fun task5(valueForA: Int, valueForB: Int): Pair<Int, Int> {
     // Do not erase or change this statement
     return Pair(a, b)
 }
+
+fun main () {
+    task5( valueForA = 9, valueForB = 1)
+}
