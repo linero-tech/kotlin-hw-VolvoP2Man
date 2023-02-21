@@ -29,7 +29,7 @@ fun task10_3(assessments: String): Char {
 
 fun task10_4(assessments: String): String {
 
-    val result = assessments.substring(0, 4)
+    val result = assessments.substring(0, 3)
     println("The first three assessments are $result")
     return result
 }
