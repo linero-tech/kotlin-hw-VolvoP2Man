@@ -5,8 +5,11 @@ fun task5(valueForA: Int, valueForB: Int): Pair<Int, Int> {
     var a = valueForA
     var b = valueForB
 
-    a = 2
-    b = 1
+    val dingus = b
+
+    b = a
+    
+    a = dingus
 
     // Do not erase or change this statement
     return Pair(a, b)
