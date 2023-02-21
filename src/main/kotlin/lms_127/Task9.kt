@@ -9,5 +9,5 @@ fun task9(sentence: String, character: Char): Boolean {
 }
 
 fun main () {
- task9(sentence = "fuck this", character = 'i')
+ task9(sentence = "Two Turbos are better than one, that is why the Volvo D5244T11 comes with two being run in sequence", character = 'i')
     }
