@@ -20,7 +20,7 @@ fun task10_2(assessments: String): Char {
 
 fun task10_3(assessments: String): Char {
 
-    val result = assessments[2]
+    val result = assessments[assessments.length/2]
     println("The quality halfway was $result")
     return result
 
