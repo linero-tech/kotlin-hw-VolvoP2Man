@@ -7,8 +7,7 @@ fun task5(valueForA: Int, valueForB: Int): Pair<Int, Int> {
 
     val dingus = b
 
-    b = a
-    
+    b = a       
     a = dingus
 
     // Do not erase or change this statement
