@@ -14,13 +14,12 @@ fun task1(a: Int, b: Int): Int {
         } else {
             print("Error")
         }
-    println("Your result is $result")
 
 
     return result
 }
 
 fun main () {
-    task1( a = 4 , b = 99 )
+    print(task1( a = 4 , b = 99 ))
 
 }
