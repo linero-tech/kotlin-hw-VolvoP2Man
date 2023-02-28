@@ -1,6 +1,21 @@
 package lms_129
 
 fun task3(number: Int): Int {
+    var result = 1
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    for (Dave in number downTo 1) {
+        result *= Dave
+
+
+    }
+
+
+
+
+    return result
+}
+
+fun main(){
+    print(task3(number = 9))
+
 }
