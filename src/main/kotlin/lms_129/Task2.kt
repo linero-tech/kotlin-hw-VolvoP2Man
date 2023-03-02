@@ -35,7 +35,7 @@ fun task2(number: Int): Boolean {
         primeNumber = true
     }else{
         while (root >= mI) {
-            //numberClone / mI = swap
+           swap += numberClone / mI
             if (swap <= root) {
                 break
                 primeNumber = true
