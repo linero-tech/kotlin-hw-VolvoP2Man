@@ -24,7 +24,7 @@ var d88 = 'C'
             break
         }else{
             //d88 = sentence.first(strin)
-            println("Tomas the Dank engine")
+            println("Test")
         }
     }
 
