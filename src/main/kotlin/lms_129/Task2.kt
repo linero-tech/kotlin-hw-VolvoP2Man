@@ -2,85 +2,79 @@ package lms_129
 
 import java.util.*
 import javax.print.attribute.standard.PrinterIsAcceptingJobs
+import kotlin.math.sqrt
 
 fun task2(number: Int): Boolean {
-
-    """val number = input
-        |if number can only be divided by it self then it's a prime number 
-        |
-        |   print("Enter a number")
-    val scanner = Scanner(System.'in')
-    val number =scanner.nextLine()
-    var numberClone = number
+    var root = 0
     var primeNumber = false
-    var divideNumber = 2
-    if (number == 2) {
-        println("number is not a prime number")
-    } else { 
-        for (numberClone  number)
-        Loop factorNumber until it is equal to Number
-        |
-        |If (number == factorNumber) then primeNumber = True 
-        |
-        |else if (factorNumber > number) then primeNumber = true
-        |
-        |else if (Number factored with factorNumber != 0) then CALCULATE factorNumber + 1
-        |
-        |else println("Shise man, an error has occured Lord Pog of Dankness, you went out of bounds my fine role of duck tape, Biltema Korv!")
-     
-     If (factorNumber > number) then primeNumber = false
-     |   else println("almost done")
-     |  
-     | if (primeNumber = True) than println("number is a prime number")
-     | else println("number is not a prime number")
-    """.trimMargin()
+    var mI = 2
+    var swap = 0
     var numberClone = number
-    var primeNumber = false
-    var factorNumber = 2
-    var varefier = number * 98
-    var d39 = false
+   //Root yes, all this fucking shit is to find out the root of the number
+    if (number != 0) {
+        var start:Long = 0
+        var end:Long = number.toLong()
+        while(start <= end) {
+            var mid:Long = (start + end)/2
+            if (mid * mid < number) {
+                start = mid * 1
+                root = mid.toInt()
 
-    while (d39 == false) {
-        if (factorNumber == number) {
-            primeNumber = true
-            d39 = true
+            } else if (mid * mid > number) {
+                end = mid -1
 
-        } else if (factorNumber > number) {
-            d39 = true
-
-        } else if (number % factorNumber != 0) {
-            factorNumber + 1
-
-        } else {
-            print("Error here we have, My fine Lord Pog of Dankness, went out of bounds you did")
+            } else{
+                root = mid.toInt()
+                break
+            }
         }
-            if (factorNumber > number)
-
-
-            if (factorNumber > number) {
-            primeNumber = false
-            d39 = true
-        } else {
-            println("Almost DONE")
-        }
-
-        if (primeNumber == true) {
-            println("$number is a prime number")
-        } else {
-            println("$number is not a prime number")
-        }
-    d39 = true
-
     }
 
+    //prime Number
+    if (number == 2){
+        primeNumber = true
+    }else{
+        while (root >= mI) {
+            //numberClone / mI = swap
+            if (swap <= root) {
+                break
+                primeNumber = true
+            }else if(swap == 0){
+                break
+            }else{
+                mI + 1
+            }
 
+        }
+    }
         val result = primeNumber
-
-
         return result
 
 }
+//Finding the root of X
+fun rootSqrt(x: Int ):Int{
+    var ans = 0
+    if (x != 0) {
+        var start:Long = 0
+        var end:Long = x.toLong()
+        while(start <= end) {
+            var mid:Long = (start + end)/2
+            if (mid * mid < x) {
+                start = mid * 1
+                ans = mid.toInt()
+
+            } else if (mid * mid > x) {
+                end = mid -1
+
+            } else{
+                ans = mid.toInt()
+                break
+            }
+        }
+    }
+ return ans
+}
   fun main() {
-     task2(number = 99)
+     task2(number = 7)
 
   }
