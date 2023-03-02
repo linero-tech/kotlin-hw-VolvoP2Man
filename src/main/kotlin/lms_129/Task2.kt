@@ -10,7 +10,7 @@ fun task2(number: Int): Boolean {
     var mI = 2
     var swap = 0
     var numberClone = number
-   //Root yes, all this fucking shit is to find out the root of the number
+   //Root yes, all this is to find out the root of the number
     if (number != 0) {
         var start:Long = 0
         var end:Long = number.toLong()
