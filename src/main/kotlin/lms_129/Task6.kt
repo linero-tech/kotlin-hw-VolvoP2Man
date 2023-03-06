@@ -2,28 +2,25 @@ package lms_129
 
 fun task6(number: Int): Int {
 
-    var result = 0
     val sentence = number.toString()
-    val length = sentence.length
     val loop = false
     var counter = 0
-    val reverse = sentence.reversed()
-   // println("control = $reverse")
+    var reverse = ""
 
-    //Useless loop
+
+    //Pretty Useless loop, in my opinion, but I don't like doing math so, here we go
     while (!loop) {
         counter += 1
-        if (counter > length) {
+        if (counter == 2) {
             break
         }else{
-            //d88 = sentence.first(string)
-           // println("Test")
+            reverse = sentence.reversed()
         }
     }
 
 //println(counter)
-    val result2 = reverse.toInt()
-result += result2
+   val result = reverse.toInt()
+
 
     return result
 }
