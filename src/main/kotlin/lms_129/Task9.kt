@@ -4,26 +4,28 @@ fun task9(temperature: String): String {
 
     var result = ""
     val loop = false
-    var fahrenheit = false
-    var Celsius = false
-    var c = 0
-    var f = 0
     var numberString = temperature
+    var temperatureClone = temperature.uppercase()
     var number = 0
-    val fahrenheitTemp = ""
 
     while(!loop){
         if (temperature.contains('C',ignoreCase = true)) {
-            numberString = temperature.substringBeforeLast('C')
+            numberString = temperatureClone.substringBeforeLast('C')
             number = numberString.toInt()
+            result += number * 1.8 + 32
+            break
 
 
 
         } else if (temperature.contains('F', ignoreCase = true)) {
-            numberString = temperature.substringBeforeLast('F')
+            numberString = temperatureClone.substringBeforeLast('F')
             number = numberString.toInt()
+            result += (number -32) * 0.5556
+            break
 
         }else{
+            println("The input lacks acceptable unit, please re-enter the temperature with ether 'C' for Celsius or 'F' for Fahrenheit, at the end")
+            break
 
         }
     }
@@ -32,5 +34,5 @@ fun task9(temperature: String): String {
 }
 
 fun main(){
-    println(task9(temperature = "69C"))
+    println(task9(temperature = "100c"))
 }
