@@ -2,33 +2,20 @@ package lms_129
 
 fun task10(password: String): Boolean {
 
-    var result = false
-    val length = password.length
-    var isLongButNoTo = false
-    var character = false
+    val regex1 = Regex("[a-z]")
+    val regex2 = Regex("[A-Z]")
+    val regex3 = Regex("[0-9]")
+    val regex4 = Regex("[$#@]")
 
-    if (length <= 10 && length >= 6) {
-        isLongButNoTo = true
-    }else{
-        println("Password is $length long")
-        println("Password is ether to long or to short, it has to be between 6 and 10 characters")
-    }
-
-    if (password.contains('$') || password.contains('#') || password.contains('@')) {
-        character = true
-    }else{
-        println("password $password , doesn't contain '#' or '$' or '@'")
-    }
-
-    if (isLongButNoTo == true && character == true){
-        result = true
-    }
-
-
+val result = password.length in 6..10 &&
+        regex1.containsMatchIn(password) &&
+        regex2.containsMatchIn(password) &&
+        regex3.containsMatchIn(password) &&
+        regex4.containsMatchIn(password)
 
     return result
 }
 
 fun main(){
-    println(task10(password = "#clocksonS"))
+    println(task10(password = "#cloCks0nS"))
 }
