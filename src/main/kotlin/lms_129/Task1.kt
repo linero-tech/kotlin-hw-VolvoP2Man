@@ -2,9 +2,16 @@ package lms_129
 
 fun task1(a: Int, b: Int): Int {
 
-    val a2 = a.toString()
-    val b2 = b.toString()
     var result = 0
+    if(a < b) {
+        for(i in a..b) {
+            result += i
+        }
+
+    }
+
+    /*val a2 = a.toString()
+    val b2 = b.toString()
     var sudoResult = ""
         if (a >= b) {
             result = 0
@@ -13,13 +20,13 @@ fun task1(a: Int, b: Int): Int {
             result = sudoResult.toInt()
         } else {
             print("Error")
-        }
+        }*/
 
 
     return result
 }
 
 fun main () {
-    print(task1( a = 4 , b = 99 ))
+    print(task1( a = 1 , b = 5 ))
 
 }
